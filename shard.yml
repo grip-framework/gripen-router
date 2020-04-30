@@ -1,0 +1,13 @@
+name: gripen_router
+version: 0.1.0
+
+authors:
+  - Julien Reichardt <contact@jrei.ch>
+
+description: An HTTP Router with conflict detection.
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+
+license: ISC
