@@ -19,6 +19,10 @@ dependencies:
     github: grip-framework/gripen-router
 ```
 
+## Documentation
+
+https://grip-framework.github.io/gripen-router/
+
 ## License
 
 Copyright (c) 2020 Julien Reichardt - ISC License
