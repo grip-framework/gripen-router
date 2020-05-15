@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.33.0">
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/grip-framework/gripen-router">
+  <title>Gripen::Router::Node(P, A) - github.com/grip-framework/gripen-router</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/grip-framework/gripen-router/Gripen" data-name="gripen">
+      <a href="../../Gripen.html">Gripen</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/grip-framework/gripen-router/Gripen/Router" data-name="gripen::router">
+      <a href="../../Gripen/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/grip-framework/gripen-router/Gripen/Router/Error" data-name="gripen::router::error">
+      <a href="../../Gripen/Router/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/grip-framework/gripen-router/Gripen/Router/GlobPath" data-name="gripen::router::globpath">
+      <a href="../../Gripen/Router/GlobPath.html">GlobPath</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/grip-framework/gripen-router/Gripen/Router/Node" data-name="gripen::router::node(p, a)">
+      <a href="../../Gripen/Router/Node.html">Node</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/grip-framework/gripen-router/Gripen/Router/Node/PathParameterConflict" data-name="gripen::router::node::pathparameterconflict">
+      <a href="../../Gripen/Router/Node/PathParameterConflict.html">PathParameterConflict</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/grip-framework/gripen-router/Gripen/Router/Node/RouteConflict" data-name="gripen::router::node::routeconflict">
+      <a href="../../Gripen/Router/Node/RouteConflict.html">RouteConflict</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/grip-framework/gripen-router/Gripen/Router/PathParameterNode" data-name="gripen::router::pathparameternode(p, a)">
+      <a href="../../Gripen/Router/PathParameterNode.html">PathParameterNode</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Gripen::Router::Node(P, A)
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Gripen/Router/Node.html">Gripen::Router::Node(P, A)</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Nodes are used to create route paths.</p>
+
+<p>A a tree of nodes is made by assigning children nodes to given paths.</p>
+
+<p>An action can be attached to a node.</p>
+
+<p><code>P</code> is the path parameter type and <code>A</code> the route action type.</p>
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="direct-known-subclasses" class="anchor" href="#direct-known-subclasses">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Direct Known Subclasses
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="../../Gripen/Router/PathParameterNode.html">Gripen::Router::PathParameterNode(P, A)</a></li>
+    
+  </ul>
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L8" target="_blank">
+        node.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#action:A?-instance-method" class="signature"><strong>#action</strong> : A?</a>
+        
+          <div class="summary"><p>Action associated to the node.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add(path:Array(P%7CString),&action:-%3EA):A-instance-method" class="signature"><strong>#add</strong>(path : Array(P | String), &action :  -> A) : A</a>
+        
+          <div class="summary"><p>Adds a route, yields if there is no action and returns the action <code>T</code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#children:Hash(String,Gripen::Router::Node(P,A))%7CGripen::Router::PathParameterNode(P,A)%7CNil-instance-method" class="signature"><strong>#children</strong> : Hash(String, Gripen::Router::Node(P, A)) | Gripen::Router::PathParameterNode(P, A) | Nil</a>
+        
+          <div class="summary"><p>A node can either lead to other path nodes or a single path parameter, which will catch all possible path values.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#each_path(&block:Array(P%7CString),A-%3E)-instance-method" class="signature"><strong>#each_path</strong>(&block : Array(P | String), A -> )</a>
+        
+          <div class="summary"><p>Returns each path in the node tree.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find(full_path:String,delimiter:Char%7CString=&#39;/&#39;,&:P,String-%3E):A?-instance-method" class="signature"><strong>#find</strong>(full_path : String, delimiter : Char | String = <span class="s">&#39;/&#39;</span>, & : P, String -> ) : A?</a>
+        
+          <div class="summary"><p>Finds a <code>A</code> action, and yields each <code>P</code> path parameter with its <code>String</code> value.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#merge!(other:Gripen::Router::Node(P,A),&block:A,A-%3E)-instance-method" class="signature"><strong>#merge!</strong>(other : Gripen::Router::Node(P, A), &block : A, A -> )</a>
+        
+          <div class="summary"><p>Merges nodes to this one.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="action:A?-instance-method">
+      <div class="signature">
+        
+        def <strong>action</strong> : A?
+
+        <a class="method-permalink" href="#action:A?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Action associated to the node.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add(path:Array(P|String),&amp;action:-&gt;A):A-instance-method">
+      <div class="signature">
+        
+        def <strong>add</strong>(path : Array(P | String), &action :  -> A) : A
+
+        <a class="method-permalink" href="#add(path:Array(P%7CString),&action:-%3EA):A-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Adds a route, yields if there is no action and returns the action <code>T</code>.</p>
+
+<p>Any conflict will raise an error.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="children:Hash(String,Gripen::Router::Node(P,A))|Gripen::Router::PathParameterNode(P,A)|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>children</strong> : Hash(String, <a href="../../Gripen/Router/Node.html">Gripen::Router::Node</a>(P, A)) | <a href="../../Gripen/Router/PathParameterNode.html">Gripen::Router::PathParameterNode</a>(P, A) | Nil
+
+        <a class="method-permalink" href="#children:Hash(String,Gripen::Router::Node(P,A))%7CGripen::Router::PathParameterNode(P,A)%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>A node can either lead to other path nodes or a single path parameter, which will catch all possible path values.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="each_path(&amp;block:Array(P|String),A-&gt;)-instance-method">
+      <div class="signature">
+        
+        def <strong>each_path</strong>(&block : Array(P | String), A -> )
+
+        <a class="method-permalink" href="#each_path(&block:Array(P%7CString),A-%3E)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns each path in the node tree.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L154" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find(full_path:String,delimiter:Char|String=&amp;#39;/&amp;#39;,&amp;:P,String-&gt;):A?-instance-method">
+      <div class="signature">
+        
+        def <strong>find</strong>(full_path : String, delimiter : Char | String = <span class="s">&#39;/&#39;</span>, & : P, String -> ) : A?
+
+        <a class="method-permalink" href="#find(full_path:String,delimiter:Char%7CString=&#39;/&#39;,&:P,String-%3E):A?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Finds a <code>A</code> action, and yields each <code>P</code> path parameter with its <code>String</code> value.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="merge!(other:Gripen::Router::Node(P,A),&amp;block:A,A-&gt;)-instance-method">
+      <div class="signature">
+        
+        def <strong>merge!</strong>(other : <a href="../../Gripen/Router/Node.html">Gripen::Router::Node</a>(P, A), &block : A, A -> )
+
+        <a class="method-permalink" href="#merge!(other:Gripen::Router::Node(P,A),&block:A,A-%3E)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Merges nodes to this one. Yield the existing and the other action in case of a conflict.</p>
+
+<p>Any other conflict will raise an error.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/grip-framework/gripen-router/blob/1bbd6835fa9b4c4c2793fea28f126e92b3af417e/src/node.cr#L120" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
